@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ajax Shoutbox</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" /> 
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.selection.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+
+    <!-- the title bar at the top -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <span class="brand">Ajax Shoutbox</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form>
+      
+        <!-- this contains the messages that are posted by all users -->
+	<div class="control-group">
+          <div class="faux-label">Messages:</div>
+          <div class="controls">
+	    <div id="msg-parent">
+	    <!-- the actual messages go in here -->
+            <div id="messages">
+
+	    </div>
+	    </div>
+          </div>
+	</div>
+
+	<!-- the actual name input -->
+	<div class="control-group">
+          <label class="control-label" for="name">Name:</label>
+          <div class="controls">
+            <input type="text" class="stretch" id="name" />
+          </div>
+	</div>
+
+	<!-- the actual messages textarea -->
+	<div class="control-group">
+          <label class="control-label" for="message">Message:</label>
+          <div class="controls">
+            <textarea class="stretch" id="message" rows="3"></textarea>
+          </div>
+	</div>
+
+	<!-- the row of emotes -->
+	<div class="emoticons">
+	  <span class="btn">
+	    <img src="img/face-angel.png" alt="angel" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-crying.png" alt="crying" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-devilish.png" alt="devilish" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-glasses.png" alt="glasses" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-grin.png" alt="grin" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-kiss.png" alt="kiss" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-monkey.png" alt="monkey" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-plain.png" alt="plain" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-sad.png" alt="sad" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-smile-big.png" alt="smile-big" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-smile.png" alt="smile" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-surprise.png" alt="surprise" />
+	  </span>
+	  <span class="btn">
+	    <img src="img/face-wink.png" alt="wink" />
+	  </span>
+	</div>
+
+
+	<div id="format">
+	  <div>
+	    <span class="btn" id="bold"><label id="boldLabel" for="bold">B</label></span>
+	    <span class="btn" id="italic"><label id="italicLabel" for="italic"><i>I</i></label></span>
+	    <span class="btn" id="underline"><label id="underlineLabel" for="underline"><u>U</u></label></span>
+</div>
+</div>
+
+	<!-- clear and send buttons -->
+	<div class="actions">
+          <input class="btn" type="button" class="btn btn-large" value="Clear" id="clearButton"/>
+          <input class="btn" type="button" class="btn btn-large btn-primary" value="Send" id="sendButton"/>
+	</div>
+
+      </form>
+
+    </div>
+    <script src="js/birkySB.js"></script>
+  </body>
+</html>
